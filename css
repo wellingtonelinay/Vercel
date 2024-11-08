@@ -69,3 +69,22 @@ footer {
     color: #fff;
     margin-top: 2rem;
 }
+.image-gallery {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 250px; /* Define uma largura fixa */
+    height: 250px; /* Define uma altura fixa para uniformidade */
+    object-fit: cover; /* Mantém o corte para preencher o contêiner */
+    border-radius: 8px; /* Bordas arredondadas para estética */
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
